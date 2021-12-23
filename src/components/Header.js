@@ -24,7 +24,9 @@ const Header = () => {
           <button>Inicar Sesión</button>
         </Link>
 
-        <button>Registrarse</button>
+        <Link to="/registro">
+          <button>Registrarse</button>
+        </Link>
       </div>
     </HeaderContainer>
   );
