@@ -41,7 +41,7 @@ const Registro = () => {
         </div>
 
         <div className="input-container">
-          <label htmlFor="correo">Correo electronico</label>
+          <label htmlFor="correo">Correo electrónico</label>
           <input
             type="text"
             id="correo"

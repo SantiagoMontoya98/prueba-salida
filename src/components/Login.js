@@ -38,7 +38,7 @@ const Login = () => {
 
       <form className="form" onSubmit={handleSubmit}>
         <div className="input-container">
-          <label htmlFor="correo">Correo electronico</label>
+          <label htmlFor="correo">Correo electrónico</label>
           <input
             type="text"
             id="correo"
