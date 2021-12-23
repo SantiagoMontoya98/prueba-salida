@@ -141,6 +141,17 @@ const Products = () => {
       Number(d.getElementById("6").value) * Number(cantidad7);
 
     setSubtotal(subtotal);
+
+    setItems(
+      items +
+        Number(cantidad1) +
+        Number(cantidad2) +
+        Number(cantidad3) +
+        Number(cantidad4) +
+        Number(cantidad5) +
+        Number(cantidad6) +
+        Number(cantidad7)
+    );
   };
 
   const handleDeselect = () => {
@@ -157,6 +168,8 @@ const Products = () => {
     d.getElementById("6").removeAttribute("checked");
 
     setSubtotal(0);
+
+    setItems(0);
   };
 
   //console.log(ingredientes);
