@@ -22,7 +22,7 @@ export const loginEmailPassword = (email, password) => {
     signInWithEmailAndPassword(auth, email, password)
       .then(({ user }) => {
         dispatch(loginSync(user.uid, user.displayName));
-        console.log(user);
+        //console.log(user);
         //return "Hola";
       })
       .catch((e) => {

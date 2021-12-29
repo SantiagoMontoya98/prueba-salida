@@ -4,6 +4,7 @@ import {
   createUserWithEmailAndPassword,
   updateProfile,
 } from "@firebase/auth";
+import { loginSync } from "./actionLogin";
 
 const registerSync = (name, email) => {
   return {
@@ -24,7 +25,9 @@ export const registerAsync = (name, email, password) => {
 
         dispatch(registerSync(user.displayName, user.email));
 
-        console.log(user);
+        dispatch(loginSync(user.uid, user.displayName));
+
+        //console.log(user);
       })
       .catch((e) => {
         console.log(e);
