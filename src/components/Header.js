@@ -12,7 +12,7 @@ const Header = ({ logged }) => {
     const auth = getAuth();
     signOut(auth)
       .then((user) => {
-        console.log("logout");
+        //console.log("logout");
       })
       .catch((err) => console.log(err.message));
   };

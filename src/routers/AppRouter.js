@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Compra from "../components/Compra";
 import Login from "../components/Login";
+import Politicas from "../components/Politicas";
 import Registro from "../components/Registro";
 import Home from "../containers/Home";
 import { GlobalStyles } from "../styles/GlobalStyles";
@@ -32,6 +33,7 @@ const AppRouter = () => {
 
       <Routes>
         <Route path="/" element={<Home logged={logged} />} />
+        <Route path="/politicas" element={<Politicas />} />
         <Route
           path="login"
           element={
