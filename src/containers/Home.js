@@ -1,10 +1,10 @@
 import Header from "../components/Header";
 import Products from "../components/Products";
 
-const Home = () => {
+const Home = ({ logged }) => {
   return (
     <div>
-      <Header />
+      <Header logged={logged} />
       <Products />
     </div>
   );

@@ -123,13 +123,13 @@ const Products = () => {
 
     let subtotal = 0;
 
-    d.getElementById("0").setAttribute("checked", true);
-    d.getElementById("1").setAttribute("checked", true);
-    d.getElementById("2").setAttribute("checked", true);
-    d.getElementById("3").setAttribute("checked", true);
-    d.getElementById("4").setAttribute("checked", true);
-    d.getElementById("5").setAttribute("checked", true);
-    d.getElementById("6").setAttribute("checked", true);
+    d.getElementById("0").checked = true;
+    d.getElementById("1").checked = true;
+    d.getElementById("2").checked = true;
+    d.getElementById("3").checked = true;
+    d.getElementById("4").checked = true;
+    d.getElementById("5").checked = true;
+    d.getElementById("6").checked = true;
 
     subtotal =
       Number(d.getElementById("0").value) * Number(cantidad1) +
@@ -157,26 +157,18 @@ const Products = () => {
   const handleDeselect = () => {
     const d = document;
 
-    //console.log("deselect");
-
-    d.getElementById("0").removeAttribute("checked");
-    d.getElementById("1").removeAttribute("checked");
-    d.getElementById("2").removeAttribute("checked");
-    d.getElementById("3").removeAttribute("checked");
-    d.getElementById("4").removeAttribute("checked");
-    d.getElementById("5").removeAttribute("checked");
-    d.getElementById("6").removeAttribute("checked");
+    d.getElementById("0").checked = false;
+    d.getElementById("1").checked = false;
+    d.getElementById("2").checked = false;
+    d.getElementById("3").checked = false;
+    d.getElementById("4").checked = false;
+    d.getElementById("5").checked = false;
+    d.getElementById("6").checked = false;
 
     setSubtotal(0);
 
     setItems(0);
   };
-
-  //console.log(ingredientes);
-
-  //console.log(subtotal);
-
-  //console.log(formValue);
 
   return (
     <ProductsContainer>
